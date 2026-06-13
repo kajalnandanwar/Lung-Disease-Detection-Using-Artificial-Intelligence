@@ -1,8 +1,8 @@
-# AI Memory Assistant (Digital Brain)
+# Lung Disease Detection Using Artificial Intelligence
 
 ## Project Title
 
-AI-Based Memory Assistant (Digital Brain System)
+AI-Based Lung Disease Detection System Using Deep Learning and Medical Imaging
 
 ## Author(s)
 
@@ -14,46 +14,45 @@ RTMNU University
 
 ## Date
 
-March 2026
+June 2026
 
 ---
 
 ## Abstract
 
-This project presents an AI Memory Assistant, also known as a Digital Brain, designed to store, organize, and recall user information intelligently. The main goal is to help users manage their knowledge, notes, and daily information efficiently.
+This project presents an Artificial Intelligence-based Lung Disease Detection System designed to assist in the early diagnosis of respiratory diseases using chest X-ray images. The system utilizes Deep Learning and Computer Vision techniques to identify diseases such as Pneumonia, Tuberculosis, Lung Cancer, and COVID-19 from medical images.
 
-The system allows users to input data such as notes, documents, links, and voice inputs. Using Artificial Intelligence techniques like Natural Language Processing (NLP) and semantic search, the system understands and stores information in a structured way. It can later retrieve relevant information based on user queries.
-
-Unlike traditional storage systems, this assistant provides context-based answers rather than simple keyword search. Results show improved efficiency in information retrieval and better knowledge management. This project demonstrates how AI can act as a personal memory system and assist users in organizing and recalling information effectively.
+The model analyzes chest X-rays, extracts important features, and classifies the disease with high accuracy. The system provides prediction results along with confidence scores, helping healthcare professionals make faster and more informed decisions. By automating the analysis process, the proposed solution aims to reduce diagnostic time, improve accuracy, and support early treatment planning.
 
 ---
 
 ## Introduction
 
-In today’s digital world, people deal with a large amount of information daily. It becomes difficult to remember and manage all important data such as notes, ideas, and learning materials.
+Lung diseases are among the leading causes of death worldwide. Early detection plays a crucial role in improving patient outcomes and reducing mortality rates. Traditional diagnosis methods often require expert radiologists and significant time for image interpretation.
 
-This project aims to develop an AI-based memory assistant that works like a digital brain. It stores user data and helps in recalling it whenever needed. The system acts as a personal knowledge manager.
+This project aims to develop an AI-powered system capable of automatically analyzing chest X-ray images and detecting lung diseases. The system serves as a decision-support tool for healthcare professionals and can be used in hospitals, clinics, and remote healthcare environments.
 
 Main objectives:
 
-* Store and organize user data
-* Provide intelligent search and recall
-* Improve productivity and learning
-* Create a smart personal assistant
+* Detect lung diseases from chest X-ray images
+* Assist doctors in diagnosis
+* Improve diagnostic accuracy
+* Reduce manual analysis time
+* Provide fast and reliable predictions
 
 ---
 
 ## Literature Review
 
-Existing tools like note-taking apps (Notion, Evernote) and cloud storage systems help users store data but lack intelligent understanding. Search engines provide keyword-based results but do not understand context.
+Recent advancements in Artificial Intelligence and Deep Learning have significantly improved medical image analysis. Convolutional Neural Networks (CNNs) have shown excellent performance in disease classification tasks using radiological images.
 
-Recent research in AI focuses on semantic search, embeddings, and knowledge management systems. Technologies like vector databases and NLP models are used to improve data retrieval. This project combines these technologies to build a smarter and more personalized memory system.
+Several studies have demonstrated the effectiveness of models such as ResNet, VGG16, DenseNet, and EfficientNet for detecting lung diseases from chest X-rays. Research during the COVID-19 pandemic further highlighted the importance of AI-based diagnostic systems in healthcare. This project builds upon these developments by creating an intelligent and user-friendly disease detection platform.
 
 ---
 
 ## Methodology (100 words)
 
-The system takes input data such as text notes, documents, or voice inputs from the user. This data is processed using NLP techniques to extract meaning and important keywords. The processed data is then converted into embeddings and stored in a vector database for efficient retrieval. When a user asks a question, the system performs semantic search to find the most relevant information based on meaning rather than exact keywords. The retrieved data is then presented as a direct answer or summary. The modular design allows easy integration of additional features and improves system performance over time.
+The system accepts chest X-ray images as input. The images undergo preprocessing steps such as resizing, normalization, and noise reduction. A Convolutional Neural Network extracts important visual features from the images. The trained model classifies the image into categories such as Normal, Pneumonia, Tuberculosis, COVID-19, or Lung Cancer. The prediction module generates disease probabilities and confidence scores. The results are displayed through a web-based interface developed using FastAPI. The modular architecture enables future integration of additional disease classes and advanced deep learning models while maintaining high performance and scalability.
 
 ---
 
@@ -67,76 +66,90 @@ The system takes input data such as text notes, documents, or voice inputs from 
 ### Frameworks/Libraries
 
 * FastAPI
-* SpaCy / Transformers
-* Sentence Transformers (for embeddings)
-* FAISS (vector database)
+* TensorFlow
+* Keras
+* OpenCV
+* NumPy
+* Pandas
+* Matplotlib
+* Scikit-Learn
 
 ### Tools Used
 
 * VS Code
+* Google Colab
+* Jupyter Notebook
 * GitHub
 * Postman
-* Google Colab
-* MongoDB / SQLite
-* Docker (optional)
+* Kaggle Datasets
+* Docker (Optional)
 
 ---
 
 ## Results and Discussion
 
+The AI system successfully analyzes chest X-ray images and predicts the presence of lung diseases.
+
 The system can:
 
-* Store notes and documents
-* Retrieve information using smart search
-* Provide summarized answers
+* Detect Pneumonia
+* Detect Tuberculosis
+* Detect COVID-19
+* Detect Lung Cancer indicators
+* Classify normal and abnormal X-rays
+* Generate confidence scores
 
 Benefits:
 
-* Faster information recall
-* Improved knowledge management
-* Better productivity
+* Early disease detection
+* Faster diagnosis process
+* Reduced workload for radiologists
+* Improved healthcare accessibility
+* AI-assisted medical decision support
 
-The system performs better than traditional keyword-based systems by providing context-based results and accurate answers.
+Experimental results indicate that deep learning-based image analysis achieves high accuracy and can effectively support healthcare professionals in disease diagnosis.
 
 ---
 
 ## Limitation
 
-* Requires computational resources for processing
-* Accuracy depends on data quality
-* Limited support for complex queries
-* Initial setup can be complex
+* Requires large datasets for training
+* Accuracy depends on image quality
+* Cannot replace medical professionals
+* Limited performance on rare diseases
+* High computational requirements during training
 
 ---
 
 ## Future Scope
 
----
-* Context-based memory
-* Smart semantic search
-* AI chat with memory
-* Auto note summarization
-* Memory timeline (past activity)
-* Memory linking (connect topics)
-* Personalized suggestions
-* Multimodal input (text, voice, image)
-* Secure data storage
-* “Second brain” functionality
-* Predictive memory suggestions
-* Smart reminders
-
-* AI system that remembers, understands, and recalls information intelligently.
+* Integration with CT scan analysis
+* Real-time disease monitoring
+* Multi-disease detection using a single model
+* Cloud-based healthcare deployment
+* Mobile application support
+* Explainable AI for diagnosis interpretation
+* Integration with hospital management systems
+* AI-powered treatment recommendations
+* Telemedicine support
+* Disease progression prediction
 
 ---
 
 ## Conclusion
 
-The AI Memory Assistant (Digital Brain) provides an intelligent way to store and recall information. By using AI techniques like NLP and semantic search, the system improves knowledge management and productivity. This project shows how AI can act as a personal assistant and enhance human memory capabilities.
+The AI-Based Lung Disease Detection System demonstrates the potential of Artificial Intelligence in modern healthcare. By leveraging deep learning and medical imaging, the system provides fast, accurate, and reliable disease predictions. The project highlights how AI can assist healthcare professionals in early diagnosis, improve patient outcomes, and contribute to more efficient healthcare services.
 
 ---
 
 ## References
 
-[1] "Natural Language Processing Research," 2021.
-[2] "Semantic Search and Embeddings," 2022.
-[3] https://huggingface.co/
+[1] World Health Organization (WHO), Respiratory Diseases Report.
+
+[2] TensorFlow Documentation, https://www.tensorflow.org/
+
+[3] OpenCV Documentation, https://opencv.org/
+
+[4] National Institutes of Health (NIH) Chest X-Ray Dataset.
+
+[5] Deep Learning for Medical Image Analysis Research Papers, 2022–2026.
